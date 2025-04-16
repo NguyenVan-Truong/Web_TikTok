@@ -1,6 +1,3 @@
-import { title } from "@/components/primitives";
-import DefaultLayout from "@/layouts/default";
-
 export default function DocsPage() {
   return (
     // <DefaultLayout>
@@ -11,7 +8,7 @@ export default function DocsPage() {
     //   </section>
     // </DefaultLayout>
     <>
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-visible">
         <video
           className="w-full h-full object-cover"
           src="https://res.cloudinary.com/dcvu7e7ps/video/upload/v1744799772/Download_vjv8fv.mp4"
@@ -19,8 +16,7 @@ export default function DocsPage() {
           muted
           loop
           playsInline
-        />
-
+        />{" "}
         <div className="absolute top-0 left-0 w-full h-full text-white flex flex-col justify-between p-4">
           <div className="flex justify-center mt-4 space-x-6 text-sm font-semibold">
             <button className="text-white border-b-2 border-white">
