@@ -5,13 +5,15 @@ import Provider from "./../node_modules/react-redux/src/components/Provider";
 import App from "./App.tsx";
 import "./input.css";
 import { store } from "./store/stote.tsx";
-
+import { HeroUIProvider } from "@heroui/react";
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <StrictMode>
-        <App />
-      </StrictMode>
-    </Provider>
-  </BrowserRouter>
+  <HeroUIProvider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <StrictMode>
+          <App />
+        </StrictMode>
+      </Provider>
+    </BrowserRouter>
+  </HeroUIProvider>
 );
