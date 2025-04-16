@@ -1,19 +1,20 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import Provider from "./../node_modules/react-redux/src/components/Provider";
 import App from "./App.tsx";
-import "./input.css";
-import { store } from "./store/stote.tsx";
-import { HeroUIProvider } from "@heroui/react";
-createRoot(document.getElementById("root")!).render(
-  <HeroUIProvider>
+import { Providers } from "./provider.tsx";
+import "@/styles/globals.css";
+import { store } from "./store/store.tsx";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <StrictMode>
+        <Providers>
           <App />
-        </StrictMode>
+        </Providers>
       </Provider>
     </BrowserRouter>
-  </HeroUIProvider>
+  </React.StrictMode>
 );
