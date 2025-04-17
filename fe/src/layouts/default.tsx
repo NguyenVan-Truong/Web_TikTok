@@ -8,11 +8,9 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex flex-col h-screen">
+    <div>
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
-        {children}
-      </main>
+      <main className="">{children}</main>
       <footer className="bg-black w-full text-white fixed bottom-0 left-0 h-16 flex justify-around items-center z-50">
         <nav>
           <ul className="flex justify-around items-center gap-4 space-x-9">
@@ -21,14 +19,14 @@ export default function DefaultLayout({
               className="flex flex-col text-white hover:text-gray-200 "
             >
               <i className="fa-solid fa-house text-2xl"></i>
-              <span className="text-xs"> Home</span>
+              <span className="text-xs">Trang chủ</span>
             </Link>
             <Link
               href="/discover"
               className="flex flex-col text-white hover:text-gray-200 text-xs"
             >
               <i className="fa-solid fa-magnifying-glass text-2xl"></i>
-              <span className="text-xs"> Discover</span>
+              <span className="text-xs">Tìm kiếm</span>
             </Link>
             <Link
               href="/add"
@@ -45,14 +43,14 @@ export default function DefaultLayout({
             >
               {" "}
               <i className="fa-regular fa-comment  text-2xl"></i>
-              <span className="text-xs"> Inbox</span>
+              <span className="text-xs">Hộp Thư</span>
             </Link>
             <Link
-              href="/Me"
+              href="/profile"
               className="flex flex-col text-white hover:text-gray-200 text-xs"
             >
               <i className="fa-regular fa-user  text-2xl"></i>
-              <span className="text-xs"> Me</span>
+              <span className="text-xs">Hồ sơ</span>
             </Link>
           </ul>
         </nav>
