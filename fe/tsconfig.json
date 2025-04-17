@@ -22,10 +22,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "baseUrl": "."
+    // Removed duplicate "paths" key
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

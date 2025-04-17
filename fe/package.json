@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@heroui/avatar": "^2.2.13",
+    "@heroui/badge": "^2.2.10",
     "@heroui/button": "2.2.17",
     "@heroui/code": "2.2.12",
     "@heroui/dropdown": "2.3.17",
@@ -27,9 +30,10 @@
     "@reduxjs/toolkit": "^2.6.1",
     "axios": "^1.8.4",
     "clsx": "2.1.1",
-    "framer-motion": "11.15.0",
+    "framer-motion": "^11.15.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-fast-marquee": "^1.6.5",
     "react-hook-form": "^7.55.0",
     "react-player": "^2.16.0",
     "react-redux": "^9.2.0",
