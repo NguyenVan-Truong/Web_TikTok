@@ -7,7 +7,7 @@ export default function DefaultLayout({
 }) {
   return (
     <div className="">
-      <main className="container">{children}</main>
+      <main className="container ">{children}</main>
       <Footer />
     </div>
   );
