@@ -2,7 +2,7 @@ import { Box, Text } from "@mantine/core";
 import { IconTriangleInverted } from "@tabler/icons-react";
 const HomePage = () => {
   return (
-    <Box className="grid grid-cols-3 pb-16 w-full overflow-hidden">
+    <Box className="grid grid-cols-3  w-[500px] ">
       <Box className="h-72 relative">
         <video
           className="w-full h-full object-cover"
@@ -12,7 +12,7 @@ const HomePage = () => {
           loop
           playsInline
         />
-        <Box className=" flex items-center justify-between  overflow-hidden w-15 px-2  absolute  bottom-1  z-10 text-white">
+        <Box className=" flex   w-15 px-2  absolute  bottom-1  z-10 text-white">
           <IconTriangleInverted
             style={{ transform: "rotate(-90deg)" }}
             size={15}
@@ -31,7 +31,7 @@ const HomePage = () => {
           loop
           playsInline
         />
-        <Box className=" flex items-center justify-between  overflow-hidden w-15 px-2  absolute  bottom-1  z-10 text-white">
+        <Box className=" flex   w-15 px-2  absolute  bottom-1  z-10 text-white">
           <IconTriangleInverted
             style={{ transform: "rotate(-90deg)" }}
             size={15}
@@ -50,7 +50,7 @@ const HomePage = () => {
           loop
           playsInline
         />
-        <Box className=" flex items-center justify-between  overflow-hidden w-15 px-2  absolute  bottom-1  z-10 text-white">
+        <Box className=" flex   w-15 px-2  absolute  bottom-1  z-10 text-white">
           <IconTriangleInverted
             style={{ transform: "rotate(-90deg)" }}
             size={15}
@@ -69,7 +69,7 @@ const HomePage = () => {
           loop
           playsInline
         />
-        <Box className=" flex items-center justify-between  overflow-hidden w-15 px-2  absolute  bottom-1  z-10 text-white">
+        <Box className=" flex   w-15 px-2  absolute  bottom-1  z-10 text-white">
           <IconTriangleInverted
             style={{ transform: "rotate(-90deg)" }}
             size={15}

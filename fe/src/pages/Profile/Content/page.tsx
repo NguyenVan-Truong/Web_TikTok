@@ -18,9 +18,9 @@ const ContentPage = () => {
 
   return (
     <>
-      <Paper className="flex justify-center items-center">
+      <Paper>
         <Tabs color="black" value={activeTab} onChange={setActiveTab}>
-          <Tabs.List className="flex justify-center items-center space-x-5 sticky top-0 z-50 bg-white">
+          <Tabs.List className="flex justify-center items-center  space-x-5 sticky top-0 z-50 bg-white">
             <Tabs.Tab
               value="HomePage"
               className={

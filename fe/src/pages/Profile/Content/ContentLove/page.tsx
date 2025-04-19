@@ -2,7 +2,7 @@ import { Box, Text } from "@mantine/core";
 import { IconTriangleInverted } from "@tabler/icons-react";
 const LovePage = () => {
   return (
-    <Box className="grid grid-cols-3 pb-16 w-full overflow-hidden">
+    <Box className="grid grid-cols-3  w-full overflow-hidden">
       <Box className="h-72 relative">
         <video
           className="w-full h-full object-cover"
