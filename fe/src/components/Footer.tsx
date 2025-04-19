@@ -40,7 +40,7 @@ const Footer = () => {
               <span className="text-xs"> Inbox</span>
             </Link>
             <Link
-              to="/Me"
+              to="/profile"
               className="flex flex-col text-white hover:text-gray-200 text-xs items-center"
             >
               <i className="fa-regular fa-user  text-2xl"></i>
