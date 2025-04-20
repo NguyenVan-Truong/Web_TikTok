@@ -22,9 +22,9 @@ const Footer = () => {
       path: "/addpage",
     },
     {
-      name: "Inbox",
+      name: "Mailbox",
       icon: <i className="fa-regular fa-comment  text-2xl"></i>,
-      path: "/inbox",
+      path: "/mailbox",
     },
     {
       name: "Profile",
@@ -34,7 +34,6 @@ const Footer = () => {
   ];
   return (
     <div>
-      {" "}
       <footer className="bg-black w-full text-white fixed bottom-0 left-0 h-16 flex justify-around items-center z-20">
         <nav>
           <ul className="flex justify-evenly items-center gap-4 space-x-9">
