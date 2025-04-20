@@ -1,6 +1,10 @@
 import DefaultLayout from "@/layouts/default";
 import { Box, Text } from "@mantine/core";
-import { IconUserPlus, IconSearch, IconCamera } from "@tabler/icons-react";
+import {
+  IconUserPlus,
+  IconSearch,
+  IconCircleFilled,
+} from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
 import { Badge, Avatar } from "@heroui/react";
 import { useNavigate } from "react-router-dom";
@@ -175,7 +179,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
 
           <Box
@@ -207,7 +211,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
           <Box
             className="flex justify-between  items-center "
@@ -238,7 +242,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
           <Box
             className="flex justify-between  items-center "
@@ -269,7 +273,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
           <Box
             className="flex justify-between  items-center "
@@ -300,7 +304,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
           <Box
             className="flex justify-between  items-center "
@@ -331,7 +335,7 @@ const Mailbox = () => {
                 <Text ml={10}>Hộp thư đến</Text>
               </Box>
             </Box>
-            <IconCamera size={24} stroke={1.5} className="mt-5" />
+            <IconCircleFilled size={15} className="mt-5 text-green-500" />
           </Box>
         </Box>
       </Box>

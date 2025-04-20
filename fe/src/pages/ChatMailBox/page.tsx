@@ -2,12 +2,21 @@ import { IconWaveSine } from "@/common/IconWaveSine";
 import { Badge, Avatar } from "@heroui/react";
 import { Box, Button, Text, TextInput, Tooltip } from "@mantine/core";
 import { IconArrowLeft, IconPhoto, IconSend } from "@tabler/icons-react";
+import { useNavigate } from "react-router-dom";
 const ChatMail = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/mailbox");
+  };
   return (
     <Box className="mx-auto overflow-hidden w-full h-[900px]  overflow-y-auto scrollbar-hide bg-white">
       <Box className="flex gap-4 items-center h-16 px-4 top-0 bg-white z-10 fixed w-full border-b">
         <Box className="flex gap-4 items-center flex-1">
-          <IconArrowLeft size={30} className="mt-2" />
+          <IconArrowLeft
+            size={30}
+            className="mt-2 cursor-pointer"
+            onClick={handleBack}
+          />
           <Badge
             isOneChar
             color="danger"
