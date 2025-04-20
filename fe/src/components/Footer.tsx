@@ -36,7 +36,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              to="/inbox"
+              to="/mailbox"
               className="flex flex-col text-gray-200 hover:text-white0 text-xs items-center"
             >
               {" "}

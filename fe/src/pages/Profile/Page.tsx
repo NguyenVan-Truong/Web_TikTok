@@ -11,7 +11,7 @@ import ContentPage from "./Content/page";
 const Profile = () => {
   return (
     <DefaultLayout>
-      <Box className="mx-auto overflow-hidden w-full h-[900px]  overflow-y-auto scrollbar-hide bg-white">
+      <Box className=" mx-auto overflow-hidden w-full h-[900px]  overflow-y-auto scrollbar-hide bg-white">
         <Box className="flex justify-between gap-4 items-center h-16 px-4 ">
           <div>
             <IconCoins />
