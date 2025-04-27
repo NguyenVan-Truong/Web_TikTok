@@ -8,11 +8,13 @@ import ChatMail from "@/pages/ChatMailBox/page";
 import StorePage from "@/pages/Store/page";
 import AddPage from "@/pages/Addpage/page";
 import Caption from "@/pages/Caption/page";
+import FriendPage from "@/pages/Friends/page";
 const PageRouter = () => {
   return (
     <div>
       <Routes>
         <Route element={<HomePage />} path="/" />
+        <Route element={<FriendPage />} path="/friends" />
         <Route element={<StorePage />} path="/store" />
         <Route element={<AddPage />} path="/addpage" />
         <Route element={<Caption />} path="/caption" />

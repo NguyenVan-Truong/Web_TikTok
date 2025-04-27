@@ -1,41 +1,26 @@
 import DefaultLayout from "@/layouts/default";
 import { Carousel } from "@mantine/carousel";
 
-import Products from "@/components/products";
+import Comment from "@/components/Comment";
+import Menu from "@/components/Menu";
 import Share from "@/components/Share";
 import useWheelscroll from "@/hook/usewheelscroll";
-import { useEffect, useRef, useState } from "react";
-import Comment from "./../../components/Comment";
-import Menu from "./../../components/Menu";
-const HomePage = () => {
+import { useRef, useState } from "react";
+import Products from "./../../components/products";
+const FriendPage = () => {
   const [showComment, setShowComment] = useState(false);
   const [showShare, setShowShare] = useState(false);
   const carouselRef = useRef<any>(null);
   const { handleWheel } = useWheelscroll({ carouselRef, time: 800 });
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 640 ? 880 : 944);
-  console.log(isMobile);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 640 ? 880 : 944);
-    };
-
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-    };
-  }, []);
-
   return (
     <DefaultLayout>
       <div>
         <Carousel
           orientation="vertical"
-          height={isMobile}
+          height={880}
           withControls={false}
           draggable={showComment || showShare ? false : true}
+          className=""
           getEmblaApi={(embla) => {
             carouselRef.current = embla;
           }}
@@ -66,4 +51,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default FriendPage;
