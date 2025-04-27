@@ -42,6 +42,7 @@
     "axios": "^1.8.4",
     "clsx": "2.1.1",
     "embla-carousel-react": "^7.1.0",
+    "embla-carousel-wheel-gestures": "^8.0.2",
     "framer-motion": "^11.15.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
