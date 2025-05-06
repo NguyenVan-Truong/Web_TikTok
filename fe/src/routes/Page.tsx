@@ -9,6 +9,9 @@ import StorePage from "@/pages/Store/page";
 import AddPage from "@/pages/Addpage/page";
 import Caption from "@/pages/Caption/page";
 import FriendPage from "@/pages/Friends/page";
+import Login from "@/pages/Login&Register/Login";
+import Register from "@/pages/Login&Register/Register";
+import ForgotPassword from "@/pages/Login&Register/ForgotPassword";
 const PageRouter = () => {
   return (
     <div>
@@ -22,6 +25,9 @@ const PageRouter = () => {
         <Route element={<Profile />} path="/profile" />
         <Route element={<Mailbox />} path="/mailbox" />
         <Route element={<ChatMail />} path="/chatmail" />
+        <Route element={<Login />} path="/login" />
+        <Route element={<Register />} path="/register" />
+        <Route element={<ForgotPassword />} path="/forgotPassword" />
       </Routes>
     </div>
   );
